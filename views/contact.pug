@@ -1,0 +1,38 @@
+extends base.pug
+
+block style 
+  style 
+    include ../static/base-style.css
+    include ../static/home-style.css
+    include ../static/about-style.css
+    include ../static/contact-style.css
+  <script src="https://kit.fontawesome.com/0c8960d47b.js" crossorigin="anonymous"></script>
+
+block content 
+  section.contact  
+    div.contact-div#cd-1
+     div.div-for-heading
+      h3.h3-1 contact with us
+    div.contact-div#cd-2
+     form(action="/contact", method="post") 
+       div.form#form1
+        input(type="text", class="form__input", name= "name", placeholder="Name")
+       div.form#form2
+        input(type="email", class="form__input", name= "email", placeholder="Email")
+       div.form#form3
+        input(type="phone", class="form__input", name= "phone", placeholder="Phone")
+       div.form#form4
+        input(type="address", class="form__input", name= "address", placeholder="Address")
+       div.form#form5
+        textarea(name="query", class="form__input" cols="30", rows="10", placeholder="What's Your Query")
+       div.form#form6
+        button(id="btn", name="submit")
+         |Submit
+
+        //- input(type="email", class="myInput", name= "email", placeholder="Enter Your Email Id")
+        //- input(type="phone", class="myInput", name= "mobile", placeholder="Enter Your Mobile number")
+        //- input(type="text ", class="myInput", name= "address", placeholder="Enter Your Address ")
+        
+        //- textarea(name="more", cols="30", rows="10", placeholder="What's Your Query")
+        //- button(id="btn", name="submit")
+        //-  |Submit

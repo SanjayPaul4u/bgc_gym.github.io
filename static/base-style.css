@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/* FOR HOME */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    /* background-color: red; */
+    background:center/cover no-repeat url("../static/image/home-section.jpg") ;
+    height: 100%;
+    width: 100%;
+    
+    
+        
+}
+header{
+    /* background-color: black; */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: red;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+.navbar{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* LINK-MENUE */
+.link-menu{
+    display: flex;
+    padding: 3rem;
+    
+}
+
+
+.link-item{
+    list-style: none;
+    list-style: none;
+    margin-right: 1.8rem;
+}
+
+.icon{
+    color: white;
+    
+    
+   
+}
+.link{
+    border: 2px solid #eb535300;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0.1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;    
+}
+.link:hover{
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    border-radius: 5px;
+    
+    
+    
+}
+
+
+
+/* BRAND DIV */
+.brand-div{
+    padding-left: 5rem;
+}
+.brand{
+    list-style: none;
+}
+.brand-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+   font-family: 'Orbitron', sans-serif;
+}
+.brand-icon{
+    margin-left: 5px;
+    color: #1bff00;
+    font-size: 2rem;
+    
+}
+
+
+/* HAMBURGER MENU */
+.hamburger{
+    display: none;
+    
+    cursor: pointer;
+    margin-right: 20px;
+   
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* margin-right: 500px; */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: white;
+}
+
+
+
+/* MEDIA QUARY FOR NAVBAR*/
+@media(max-width:864px){
+    .hamburger{
+        display: inline-block;
+       
+    }
+    .brand-div{
+        margin-left: -63px;
+    }
+    .navbar{
+        height: 53px;
+    }
+    .brand-link{
+        font-size: 1rem;
+    }
+    .brand-icon{
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+    header{
+        /* background-color: black; */
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .icon{
+        margin-bottom: -17px;
+        margin-top: 22px;
+    }
+
+
+    
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+    .link-menu{
+        position: fixed;
+        left: -100%;
+        top: 53px;
+        /* left: 0px;
+        right: 0px;
+        top: -100%; */
+        gap: 0;
+        flex-direction: column;
+        background-color:rgba(0, 0, 0, 0.726);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        
+   }
+   
+   .link-item{
+       margin: 16px 0;
+   }
+
+   .link-menu.active{
+       left: 0;
+       /* top: 70px; */
+   }
+
+} 
+
+@media(max-width:300px){
+    .link-menu{
+        height: 250px;
+    }
+    .icon{
+        margin-bottom: -21px;
+        margin-top: -7px;
+    }
+    
+
+}
+
+
+
+
+/* FOOOTER ---------------------- */
+.footer{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    height: 161px;
+    width: 100%;
+    background: rgb(36, 35, 35);
+    margin-top: -25px;
+    /* border-radius:0px 0px 50px 50px; */
+
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer .footer-div h5{
+    padding-bottom: 20px;
+}
+.footer #divFour{
+    display: flex;
+    flex-direction: column;
+}
+.footer #divOne .logo-width_brand{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding-top: 22px;
+    font-size: 24px;
+    color: white;
+    
+}
+.footer #divTwo li{
+    list-style: none;
+}
+.footer #divTwo li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #8b8b8b;
+    padding-top: 5px;
+}
+.footer #divTwo li a:hover{
+    color: dodgerblue;
+}
+
+
+.footer #divThree li{
+    list-style: none;
+}
+.footer #divThree li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #8b8b8b;
+    padding-top: 5px;
+}
+.footer #divThree li a:hover{
+    color: dodgerblue;
+}
+
+.footer #divFour span{
+    color: #8b8b8b;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+/* SUB-FOOTER */
+.sub-footer{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background: black;
+    text-align: center;
+    padding-top: 15px;
+}
+.sub-footer p{
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUARY FOR FOOTER*/
+@media(max-width:1027px){
+    .footer{
+        font-size: 0.8rem;
+        padding: 20px 15px
+    }
+    .footer #divTwo li a{
+        font-size: 0.7rem;
+    }
+    .footer #divThree li a {
+        font-size: 0.7rem;
+    }
+    .footer #divFour span{
+        font-size: 0.7rem;
+    }
+    body{
+        width: auto;
+    }
+    
+}
+@media(max-width:510px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 405px;
+    }
+    .footer .footer-div{
+        /* border: 2px solid red; */
+        margin-top: 8px;
+        text-align: center;
+    }
+    .sub-footer p {
+        letter-spacing: 1px;
+    }
+}

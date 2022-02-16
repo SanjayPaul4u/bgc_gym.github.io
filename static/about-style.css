@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: rgb(230, 230, 230);
+}
+.about .about-div{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+   
+   border-radius: 7px;
+}
+.about .about-div h1{
+    color: black;
+    background-color: red;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: center;
+    text-transform:capitalize;
+}
+.about .about-div p{
+    text-align: center;
+    color: rgb(87, 87, 87);
+    padding: 20px;
+    
+
+}
+.about #d-1 img{
+    height: 215px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+@media(max-width:1248px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about .about-div{
+        height: 300px;
+        width: 800px;
+        margin-bottom: 10px;
+       
+    }
+    .about #d-1 img{
+        width: 399px;
+       
+    }
+
+}
+@media(max-width:800px){
+    .about .about-div{
+        width: auto;
+        height: auto;
+    }
+    .about #d-1{
+        text-align: center;
+    }
+    .about #d-1 img{
+        width: auto;
+        height: 150px;
+       
+    }
+}
+

@@ -1,0 +1,72 @@
+doctype html 
+html   
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Some description')
+    meta(name='viewport', 
+    content='width=device-width, initial-scale=1')
+ 
+    
+    title brb gym 
+    //- block scripts 
+    block style
+  body
+    header 
+      nav.navbar
+        div.brand-div
+          span.brand-icon <i class="fas fa-dumbbell"></i>
+          li.brand #[a.brand-link(href="/") BGC] 
+        ul.link-menu 
+          span.icon <i class="fas fa-home"></i>
+          li.link-item #[a.link(href="/") Home] 
+          span.icon <i class="far fa-address-card"></i>
+          li.link-item #[a.link(href="/about") About Us]
+          span.icon <i class="fab fa-servicestack"></i>
+          li.link-item #[a.link(href="/service") Our Services] 
+          span.icon <i class="fas fa-star"></i>
+          li.link-item #[a.link(href="/reviews") Reviews] 
+          span.icon <i class="fas fa-phone-square-alt"></i>
+          li.link-item #[a.link(href="/contact") Contact us] 
+        div.hamburger
+            span.bar
+            span.bar
+            span.bar
+
+            
+    block content
+
+
+
+    section.footer
+      div.footer-div#divOne
+        div.brand-name
+          span <i class="fas fa-dumbbell"></i>  BRB Gym Center
+        div.logo-width_brand 
+          span <i class="fab fa-twitter-square"></i>       
+          span <i class="fab fa-facebook-square"></i>       
+          span <i class="fab fa-whatsapp-square"></i>       
+          span <i class="fas fa-phone-square"></i> 
+      div.footer-div#divTwo
+        h5 QUICK LINK
+        li #[a(href="####") Home]    
+        li #[a(href="####") About Us]    
+        li #[a(href="####") Our Products]    
+        li #[a(href="####") Our Gallery]    
+        li #[a(href="####") Contact Us]    
+      div.footer-div#divThree
+        h5 OTHERS
+        li #[a(href="####") Terms and Conditions]    
+        li #[a(href="####") Privacy Policy]    
+        li #[a(href="####") FAQ]    
+        li #[a(href="####") Pricing]    
+        li #[a(href="####") Support] 
+      div.footer-div#divFour
+        h5 GET IN TOUCH
+        span <i class="fas fa-map-marker-alt"></i> West Bengal, ALipurduar   
+        span <i class="fas fa-mobile-alt"></i> 919064784593   
+        span <i class="fas fa-envelope-open-text"></i> sanjoypaul655@gmail.com
+    section.sub-footer
+      p BRB Gym Center | all @Copy Right Deserve 
+    script  
+      include ../static/index.js  

@@ -1,0 +1,25 @@
+extends base.pug
+
+block style 
+  style 
+    include ../static/base-style.css
+    include ../static/home-style.css
+    include ../static/about-style.css
+    include ../static/review-style.css
+  <script src="https://kit.fontawesome.com/0c8960d47b.js" crossorigin="anonymous"></script>
+
+block content 
+  section.review
+    div.review-div 
+      img(src="../static/image/review1.jpg", alt="")
+      h3 HONEY
+      p "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero saepe eos hic tempore, veritatis molestias."
+    div.review-div 
+      img(src="../static/image/review2.jpg", alt="")
+      h3 SHILA
+      p "Lorem ipsum dolor sit amet consectetur adi. Quis at ut tempore doloremque vitae magni ipsum dolor sit amet consectetur, adipisicing elit. Saepe, odio? "
+    div.review-div 
+      img(src="../static/image/review3.jpg", alt="")
+      h3 JOHNY
+      p "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero saepe eos hic tempore, veritatis molestias. Lorem ipsum dolor sit amet consectetur. "
+    

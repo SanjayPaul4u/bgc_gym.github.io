@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.review{
+    height: 67vh;
+    width: 100%;
+    color: black;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    
+
+    padding: 30px;
+    
+}
+.review .review-div img{
+    height: 6rem;
+    border: 3px solid dodgerblue;
+    box-shadow: 0px 0px 5px dodgerblue;
+    border-radius: 86px;
+}
+.review .review-div {
+    border: 2px solid #ffffff57;
+    text-align: center;
+    width: 300px;
+    height: 18rem;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: white;
+    
+}
+.review .review-div h3{
+    color: dodgerblue;
+    margin-bottom: 1rem;
+    font-family: 'Redressed', cursive;
+}
+.review .review-div p{
+    font-family: 'Redressed', cursive;
+}
+
+@media(max-width:965px){
+    .review{
+        flex-direction: column;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .review .review-div{
+        width: auto;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .review .review-div p{
+        font-size: 0.9rem;
+    }
+}

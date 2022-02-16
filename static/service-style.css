@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.service{
+    width: 100%;
+    height: 68vh;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 30px 15px 70px 15px;
+}
+.service .service-div{
+    background-color: white;
+    width: 320px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.service .service-div h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 7px;
+    background-color: red;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.service .service-div p{
+    text-transform: capitalize;
+    padding: 7px;
+    text-align: center;
+    color: rgb(87, 87, 87);
+}
+
+@media(max-width:998px){
+    .service{
+        flex-direction: column;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+    .service .service-div{
+        width: auto;
+        margin-bottom: 20px;
+        height: 350px;
+    }
+}
